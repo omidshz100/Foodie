@@ -3,7 +3,7 @@
 //  Foodie
 //
 //  Created by Omid Shojaeian Zanjani on 11/01/23.
-//Hoomanm2
+//omid
 
 import SwiftUI
 struct ContentView: View {
