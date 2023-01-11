@@ -4,12 +4,8 @@
 //
 //  Created by Omid Shojaeian Zanjani on 11/01/23.
 //
-//Hoomanm2
 
 import SwiftUI
-// First change
-//giada
-//hello
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -28,4 +24,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-//nya by lau
+
