@@ -8,6 +8,7 @@
 
 import SwiftUI
 // First change
+//giada
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -25,3 +26,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+//nya by lau
