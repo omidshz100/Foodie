@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+//var ingredients_type: [String]
+
+//ingredients_type = ["Pantry essential", "Vegetables", "Blabla"]

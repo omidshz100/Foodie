@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct Recipes: View {
+    var images = ["pic1", "pic2", "pic3", "pic4"]
+    var recipes = ["Tortillas", "Churros", "Savory Pie Crust", "Vegan Pasta"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            ForEach(0..<images.count){val  in
+                RecipesRow(imageName: images[val], recipeName: recipes[val])
+                    
+            }
+            .listRowBackground(Color.clear)
+            .listRowSeparator(.hidden)
+        }
     }
 }
 
