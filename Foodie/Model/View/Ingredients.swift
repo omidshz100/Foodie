@@ -9,12 +9,7 @@ import SwiftUI
 
 struct Ingredients: View {
     var body: some View {
-        NavigationStack{
-            //NavigationLink("Recipes", destination: Recipes())
-            //}
-            //.navigationTitle("Ciao")
-            //.navigationBarTitleDisplayMode(.automatic)
-        }
+        Text("Ingredients Screen")
     }
 }
 
