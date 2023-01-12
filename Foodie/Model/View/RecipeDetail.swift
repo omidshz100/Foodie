@@ -29,6 +29,8 @@ struct RecipeDetail: View {
                 
                 
                 Image("pic1")
+                    .resizable()
+                    .frame(width: 350, height: 250)
                     .cornerRadius(25)
                                     
                 
