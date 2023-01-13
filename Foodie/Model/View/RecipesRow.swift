@@ -10,26 +10,33 @@ import SwiftUI
 struct RecipesRow: View {
     var imageName: String = "pic1"
     var recipeName: String = "Tortillas"
+    
     var body: some View {
-        ZStack{
-            Image(imageName)
-                .resizable()
-                .frame(width: 350, height: 200)
-                .cornerRadius(30)
-                .padding(10)
-            
-            Rectangle()
-                .frame(width: 350, height: 50)
-                .foregroundColor(.white)
-                .opacity(0.5)
-                .cornerRadius(30, corners: [.bottomLeft, .bottomRight])
-                .offset(x: 0, y: 75)
-            
-            Text(recipeName)
-                .font(.title)
-                .offset(x: 0, y: 80)
-        }
-        //.background(.clear)
+        Button(action: {
+            print("text")
+        }, label: {
+            ZStack{
+                Image(imageName)
+                    .resizable()
+                    .frame(width: 350, height: 200)
+                    .cornerRadius(30)
+                    .padding(10)
+                
+                Rectangle()
+                    .frame(width: 350, height: 50)
+                    .foregroundColor(.white)
+                    .opacity(0.5)
+                    .cornerRadius(30, corners: [.bottomLeft, .bottomRight])
+                    .offset(x: 0, y: 75)
+                
+                Text(recipeName)
+                    .font(.title)
+                    .offset(x: 0, y: 80)
+            }
+        })
+        .foregroundColor(.black)
+        //.frame(width: 100, height: 100)
+        
     }
 }
 

@@ -10,15 +10,14 @@ import SwiftUI
 struct Recipes: View {
     var images = ["pic1", "pic2", "pic3", "pic4"]
     var recipes = ["Tortillas", "Churros", "Savory Pie Crust", "Vegan Pasta"]
+    
     var body: some View {
-        List{
-            ForEach(0..<images.count){val  in
-                RecipesRow(imageName: images[val], recipeName: recipes[val])
-                    
+        ScrollView(){
+            ForEach(0..<images.count){image  in
+                RecipesRow(imageName: images[image], recipeName: recipes[image])
             }
-            .listRowBackground(Color.clear)
-            .listRowSeparator(.hidden)
         }
+        .scrollIndicators(.hidden)
     }
 }
 
