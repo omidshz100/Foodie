@@ -13,6 +13,7 @@ struct Ingredients: View {
         //text
         // Added by Omid
         Text("ciao")
+        Text("hiiiii")
     }
 }
 
