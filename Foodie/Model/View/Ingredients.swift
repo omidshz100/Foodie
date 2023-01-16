@@ -12,6 +12,10 @@ struct Ingredients: View {
         Text("Ingredients Screen")
         //text
         // Added by Omid
+        Text("ciao")
+        Text("Sayin hello in Italy: 👆")
+        Text("helpppppp")
+        Text("Pull request")
     }
 }
 
