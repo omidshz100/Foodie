@@ -15,6 +15,7 @@ struct Ingredients: View {
         Text("ciao")
         Text("Sayin hello in Italy: 👆")
         Text("helpppppp")
+        Text("Pull request")
     }
 }
 
