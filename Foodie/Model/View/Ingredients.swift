@@ -14,6 +14,7 @@ struct Ingredients: View {
         // Added by Omid
         Text("ciao")
         Text("Sayin hello in Italy: 👆")
+        Text("helpppppp")
     }
 }
 
