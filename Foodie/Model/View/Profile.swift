@@ -1,5 +1,5 @@
 //
-//  Favourites.swift
+// Profile.swift
 //  Foodie
 //
 //  Created by Laura Bognanni on 12/01/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Favourites: View {
+struct Profile: View {
     var body: some View {
-        Text("Favourites")
+        Text("Grocery List")
     }
 }
 
-struct Favourites_Previews: PreviewProvider {
+struct Profile_Previews: PreviewProvider {
     static var previews: some View {
-        Favourites()
+        Profile()
     }
 }

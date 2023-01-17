@@ -15,13 +15,13 @@ struct ContentView: View {
                     Label("Pantry", systemImage: "cabinet")
                 }
                 .toolbarBackground(.visible, for: .tabBar)
-            Favourites()
+            Community()
                 .tabItem{
-                    Label("Favourites", systemImage: "heart")
+                    Label("Community", systemImage: "person.2")
                 }
-            GroceryList()
+            Profile()
                 .tabItem{
-                    Label("Grocery List", systemImage: "cart")
+                    Label("Profile", systemImage: "person.circle")
                 }
         }
     }

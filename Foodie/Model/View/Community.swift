@@ -1,5 +1,5 @@
 //
-//  GroceryList.swift
+//  Community.swift
 //  Foodie
 //
 //  Created by Laura Bognanni on 12/01/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct GroceryList: View {
+struct Community: View {
     var body: some View {
-        Text("Grocery List")
+        Text("Favourites")
     }
 }
 
-struct GroceryList_Previews: PreviewProvider {
+struct Community_Previews: PreviewProvider {
     static var previews: some View {
-        GroceryList()
+        Community()
     }
 }

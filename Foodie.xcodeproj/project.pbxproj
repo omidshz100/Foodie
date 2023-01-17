@@ -12,8 +12,8 @@
 		5D684A7729700AB5003EB498 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A7629700AB5003EB498 /* RecipeDetail.swift */; };
 		5D684A7929700B8B003EB498 /* IngredientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A7829700B8B003EB498 /* IngredientsModel.swift */; };
 		5D684A7B29700B94003EB498 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A7A29700B94003EB498 /* RecipesModel.swift */; };
-		5D684A81297010BD003EB498 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A80297010BD003EB498 /* Favourites.swift */; };
-		5D684A83297010D2003EB498 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A82297010D2003EB498 /* GroceryList.swift */; };
+		5D684A81297010BD003EB498 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A80297010BD003EB498 /* Community.swift */; };
+		5D684A83297010D2003EB498 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A82297010D2003EB498 /* Profile.swift */; };
 		5D684A8529701FAA003EB498 /* RecipesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A8429701FAA003EB498 /* RecipesRow.swift */; };
 		D9E9D7AF296ECCF2009C0223 /* FoodieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9D7AE296ECCF2009C0223 /* FoodieApp.swift */; };
 		D9E9D7B1296ECCF2009C0223 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9D7B0296ECCF2009C0223 /* ContentView.swift */; };
@@ -27,8 +27,8 @@
 		5D684A7629700AB5003EB498 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
 		5D684A7829700B8B003EB498 /* IngredientsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsModel.swift; sourceTree = "<group>"; };
 		5D684A7A29700B94003EB498 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
-		5D684A80297010BD003EB498 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
-		5D684A82297010D2003EB498 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+		5D684A80297010BD003EB498 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		5D684A82297010D2003EB498 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5D684A8429701FAA003EB498 /* RecipesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRow.swift; sourceTree = "<group>"; };
 		D9E9D7AB296ECCF2009C0223 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E9D7AE296ECCF2009C0223 /* FoodieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieApp.swift; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 				5D684A7229700A86003EB498 /* Recipes.swift */,
 				5D684A8429701FAA003EB498 /* RecipesRow.swift */,
 				5D684A7629700AB5003EB498 /* RecipeDetail.swift */,
-				5D684A80297010BD003EB498 /* Favourites.swift */,
-				5D684A82297010D2003EB498 /* GroceryList.swift */,
+				5D684A80297010BD003EB498 /* Community.swift */,
+				5D684A82297010D2003EB498 /* Profile.swift */,
 			);
 			name = View;
 			path = Model/View;
@@ -179,10 +179,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D684A7529700A9B003EB498 /* Ingredients.swift in Sources */,
-				5D684A83297010D2003EB498 /* GroceryList.swift in Sources */,
+				5D684A83297010D2003EB498 /* Profile.swift in Sources */,
 				D9E9D7B1296ECCF2009C0223 /* ContentView.swift in Sources */,
 				5D684A7B29700B94003EB498 /* RecipesModel.swift in Sources */,
-				5D684A81297010BD003EB498 /* Favourites.swift in Sources */,
+				5D684A81297010BD003EB498 /* Community.swift in Sources */,
 				5D684A7729700AB5003EB498 /* RecipeDetail.swift in Sources */,
 				5D684A8529701FAA003EB498 /* RecipesRow.swift in Sources */,
 				5D684A7329700A86003EB498 /* Recipes.swift in Sources */,
