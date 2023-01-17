@@ -9,13 +9,15 @@ import SwiftUI
 
 struct Ingredients: View {
     var body: some View {
-        Text("Ingredients Screen")
-        //text
-        // Added by Omid
-        Text("ciao")
-        Text("Sayin hello in Italy: 👆")
-        Text("helpppppp")
-        Text("Pull request")
+        VStack{
+            Text("Ingredients Screen")
+            //text
+            // Added by Omid
+            Text("ciao")
+            Text("Sayin hello in Italy: 👆")
+            Text("helpppppp")
+            Text("Pull request")
+        }
     }
 }
 
