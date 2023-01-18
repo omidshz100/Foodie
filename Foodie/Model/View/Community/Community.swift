@@ -8,24 +8,39 @@
 import SwiftUI
 
 struct Community: View {
-
-        var posts: [Post] = mockedPosts
-        var body: some View {
-           ScrollView(){
+    
+    var posts: [Post] = mockedPosts
+    var body: some View {
+        NavigationStack{
+        ScrollView(){
+      
+                
                 ForEach(posts) { post in
                     PostCell(post: post)
                 }
-            }.scrollIndicators(.hidden)
-             .padding()
+                .navigationTitle("Community")
             
-            .onAppear {
-                UITableView.appearance().separatorStyle = .none
-            }
+                .toolbar(){
+                    Button("Add Post") {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    }
+                }
+            
+            
+            }.scrollIndicators(.hidden)
+                .padding()
+            
+                .onAppear {
+                    UITableView.appearance().separatorStyle = .none
+                }
         }
+       
+        
     }
-    
+}
     struct Community_Previews: PreviewProvider {
         static var previews: some View {
             Community()
         }
     }
+

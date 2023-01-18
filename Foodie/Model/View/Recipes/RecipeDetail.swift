@@ -9,14 +9,14 @@ import SwiftUI
 
 struct RecipeDetail: View {
     var body: some View {
-
+        
         ScrollView{
             VStack{
                 HStack{
                     Text("Tortillas")
                         .font(.system(size: 40, weight: .semibold))
                         Spacer()
-                    
+               
                     
                     Button(action: {}) {
                         Image(systemName: "heart.fill") .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
@@ -70,6 +70,7 @@ struct RecipeDetail: View {
         }
         .scrollIndicators(.hidden)
         .padding()
+
     }
 }
     struct RecipeDetail_Previews: PreviewProvider {
