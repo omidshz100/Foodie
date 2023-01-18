@@ -10,11 +10,11 @@ import SwiftUI
 struct RecipesRow: View {
     var imageName: String = "pic1"
     var recipeName: String = "Tortillas"
+
+    
     
     var body: some View {
-        Button(action: {
-            print("text")
-        }, label: {
+
             ZStack{
                 Image(imageName)
                     .resizable()
@@ -33,7 +33,7 @@ struct RecipesRow: View {
                     .font(.title)
                     .offset(x: 0, y: 80)
             }
-        })
+        
         .foregroundColor(.black)
         //.frame(width: 100, height: 100)
         

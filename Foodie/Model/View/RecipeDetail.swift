@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeDetail: View {
     var body: some View {
+
         ScrollView{
             VStack(){
                 HStack{
