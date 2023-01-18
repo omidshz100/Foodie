@@ -19,6 +19,7 @@ struct Post: Identifiable, Codable {
     var profileImageName: String
     var comments: Int
     var time: Int
+
     static let samplePost = Post(name: "Alex Nolan",
                                 userName: "@RosieDel",
                                 imageName: "photo",

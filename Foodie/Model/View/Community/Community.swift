@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Community: View {
     @State private var showAddNewPost = false
+
+    
     var posts: [Post] = mockedPosts
     var body: some View {
         NavigationStack{

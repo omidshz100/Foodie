@@ -9,6 +9,9 @@ import SwiftUI
 
 struct PostCell: View {
     let post: Post
+    @State private var isLike = false
+ 
+ 
     
     var body: some View {
         VStack(spacing: 15.0) {
@@ -29,12 +32,19 @@ struct PostCell: View {
                 Image(post.imageName)
                     .resizable()
                     .scaledToFit()
-                HStack(spacing: 22.0) {
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .frame(width: 23, height: 20)
+             HStack() {
+                  
+                    Button(action: {
+                              self.isLike.toggle()
+                          }) {
+                              Image(systemName: isLike ? "heart.fill" : "heart")
+                          }
                     Text(String("\(post.likes) Likes"))
                         .font(.system(size: 18, weight: .semibold))
+                 Spacer()
+             }
+             
+                  
             
                 }.frame(maxWidth: .infinity, alignment: .leading)
                 Divider()
@@ -58,9 +68,10 @@ struct PostCell: View {
                                 //.foregroundColor(Color("LightGrayColor"))
                     }.frame(maxWidth: .infinity, alignment: .leading)
                 }.frame(maxWidth: .infinity, alignment: .leading)
-              }.padding()
+    }
+        
            }
-        }
+        
     
 
 
