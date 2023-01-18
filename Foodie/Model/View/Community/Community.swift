@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Community: View {
-    
+    @State private var showAddNewPost = false
     var posts: [Post] = mockedPosts
     var body: some View {
         NavigationStack{
@@ -19,11 +19,19 @@ struct Community: View {
                     PostCell(post: post)
                 }
                 .navigationTitle("Community")
+                
             
-                .toolbar(){
-                    Button("Add Post") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                    }
+                .toolbar {
+                    Button(action:
+                                { showAddNewPost.toggle()})
+                        {
+                           Text("Add Post")
+                        }
+                    
+                }
+                
+                .sheet(isPresented: $showAddNewPost){
+                   NewPost()
                 }
             
             
@@ -35,7 +43,10 @@ struct Community: View {
                 }
         }
        
-        
+        /*             .sheet(isPresented: $showAddNewPost){
+        NewPost()
+     }
+*/
     }
 }
     struct Community_Previews: PreviewProvider {
