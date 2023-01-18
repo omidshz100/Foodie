@@ -39,7 +39,7 @@ let mockedPosts =
           userName: "@RosieDel",
           imageName: "photo",
           likes: 120,
-          description: "The pearl in the ocean! The ocean always makes me feel like we are ‘at the end of the world’. A deep feeling of loneliness and wildness at the same time. In this travel, we stayed in Reiseland for 4 nights to explore it. We had a chance to see the giant sea turtles, too! I definitely loved it!",
+          description: "My first recreation! I need to try this recipe again. #yas",
          views: 1000,
          downloads : 20,
          profileImageName: "NewPostProfile",
@@ -50,7 +50,7 @@ let mockedPosts =
        userName: "@MaxinePol",
        imageName: "photo2",
        likes: 300,
-       description: "The pearl in the ocean! The ocean always makes me feel like we are ‘at the end of the world’. A deep feeling of loneliness and wildness at the same time. In this travel, we stayed in Reiseland for 4 nights to explore it. We had a chance to see the giant sea turtles, too! I definitely loved it!",
+       description: "Good recipe, my skills.. not so much. #burnt #stilledible",
       views: 10000,
       downloads : 1000,
       profileImageName: "NewPostProfile2",
@@ -60,22 +60,12 @@ let mockedPosts =
        userName: "@JDean",
        imageName: "photo3",
        likes: 278,
-       description: "The pearl in the ocean! The ocean always makes me feel like we are ‘at the end of the world’. A deep feeling of loneliness and wildness at the same time. In this travel, we stayed in Reiseland for 4 nights to explore it. We had a chance to see the giant sea turtles, too! I definitely loved it!",
+       description: "Vegans are happy. I am a vegan and I am happy. #firsthandexperience",
       views: 90000,
       downloads : 3400,
       profileImageName: "NewPostProfile",
       comments: 999,
       time:40)
-     ,
-    Post(name: "Ivan Garcia",
-     userName: "@ifgs1",
-     imageName: "Photo4",
-     likes: 50000,
-     description: "The pearl in the ocean! The ocean always makes me feel like we are ‘at the end of the world’. A deep feeling of loneliness and wildness at the same time. In this travel, we stayed in Reiseland for 4 nights to explore it. We had a chance to see the giant sea turtles, too! I definitely loved it!",
-    views: 1000000,
-    downloads : 520000,
-    profileImageName: "NewPostProfile2",
-    comments: 384,
-    time:15)
+    
 ]
 
