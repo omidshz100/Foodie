@@ -16,7 +16,6 @@ struct Recipes: View, Hashable {
     var body: some View {
         NavigationStack(){
             ScrollView(){
-   
                 ForEach(0..<images.count) { image in
                     NavigationLink {
                         RecipeDetail()
@@ -26,6 +25,8 @@ struct Recipes: View, Hashable {
 
                 }
             }
+            .scrollIndicators(.hidden)
+            .navigationTitle("Recipes")
         }
     }
 }

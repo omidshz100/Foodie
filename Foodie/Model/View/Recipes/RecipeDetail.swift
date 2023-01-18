@@ -11,7 +11,7 @@ struct RecipeDetail: View {
     var body: some View {
 
         ScrollView{
-            VStack(){
+            VStack{
                 HStack{
                     Text("Tortillas")
                         .font(.system(size: 40, weight: .semibold))
@@ -68,6 +68,7 @@ struct RecipeDetail: View {
                 
             }
         }
+        .scrollIndicators(.hidden)
         .padding()
     }
 }
