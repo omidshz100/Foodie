@@ -22,7 +22,7 @@ struct BtnTogglable: View {
                 self.actionOnTap(self.isSelected, self.btnTitle)
             }
             .foregroundColor(self.isSelected ? .white:.black)
-            .background(self.isSelected ? .black:Color("lightGray"))
+            .background(self.isSelected ? .black:Color("buttonColor"))
             .cornerRadius(20)
     }
 }

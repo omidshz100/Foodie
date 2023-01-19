@@ -10,3 +10,8 @@ import Foundation
 //var ingredients_type: [String]
 
 //ingredients_type = ["Pantry essential", "Vegetables", "Blabla"]
+
+
+struct IngredientSelected{
+    static var selectedIngredient:[String] = []
+}

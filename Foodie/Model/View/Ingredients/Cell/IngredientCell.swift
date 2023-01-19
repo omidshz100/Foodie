@@ -26,6 +26,8 @@ struct IngredientCell: View {
                                     BtnTogglable { isSelected, btnTitle in
                                         if isSelected {
                                             print(btnTitle)
+                                            
+                                            IngredientSelected.selectedIngredient.append(btnTitle)
                                         }
                                     }
                                 }

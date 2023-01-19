@@ -9,9 +9,16 @@ import SwiftUI
 
 struct Ingredients: View {
     var body: some View {
-        ScrollView{
-            ForEach(0..<10){item in
-                IngredientCell()
+        VStack{
+            Text("Select your ingredients!")
+                .font(.system(size: 32, weight: .semibold))
+            ScrollView{
+                ForEach(0..<10){item in
+                    IngredientCell()
+                }
+            }
+            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                print(IngredientSelected.selectedIngredient)
             }
         }
     }
