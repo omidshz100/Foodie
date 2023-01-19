@@ -83,9 +83,8 @@
 		8B87EF682978165200B39BEF /* Ingredients */ = {
 			isa = PBXGroup;
 			children = (
+				8B87EF7129794B1600B39BEF /* Cell */,
 				5D684A7429700A9B003EB498 /* Ingredients.swift */,
-				D9ADE22D2978053D001336AD /* IngredientCell.swift */,
-				D9ADE22B2978052F001336AD /* BtnTogglable.swift */,
 			);
 			path = Ingredients;
 			sourceTree = "<group>";
@@ -109,6 +108,15 @@
 				8B87EF6F29787FAE00B39BEF /* NewPost.swift */,
 			);
 			path = Community;
+			sourceTree = "<group>";
+		};
+		8B87EF7129794B1600B39BEF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D9ADE22D2978053D001336AD /* IngredientCell.swift */,
+				D9ADE22B2978052F001336AD /* BtnTogglable.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		D9E9D7A2296ECCF2009C0223 = {

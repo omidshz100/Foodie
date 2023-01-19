@@ -32,7 +32,7 @@ struct NewPost: View {
                 .padding()
                 .font(.system(size:20, weight:.medium))
                 .frame(width: 350, height: 82)
-                .background(Color("color2"))
+                .background(Color("color1"))
                 .cornerRadius(14)
             
             Button {
