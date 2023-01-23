@@ -18,6 +18,7 @@
 		8B87EF6C297816EA00B39BEF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6B297816EA00B39BEF /* Post.swift */; };
 		8B87EF6E2978171400B39BEF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6D2978171400B39BEF /* PostCell.swift */; };
 		8B87EF7029787FAE00B39BEF /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6F29787FAE00B39BEF /* NewPost.swift */; };
+		D987014B297EA2B200D88986 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987014A297EA2B200D88986 /* Extensions.swift */; };
 		D9ADE22C2978052F001336AD /* BtnTogglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22B2978052F001336AD /* BtnTogglable.swift */; };
 		D9ADE22E2978053D001336AD /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22D2978053D001336AD /* IngredientCell.swift */; };
 		D9BE56BC297E7A590070CCAD /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE56BB297E7A590070CCAD /* APIs.swift */; };
@@ -39,6 +40,7 @@
 		8B87EF6B297816EA00B39BEF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8B87EF6D2978171400B39BEF /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8B87EF6F29787FAE00B39BEF /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
+		D987014A297EA2B200D88986 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D9ADE22B2978052F001336AD /* BtnTogglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnTogglable.swift; sourceTree = "<group>"; };
 		D9ADE22D2978053D001336AD /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		D9BE56BB297E7A590070CCAD /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		D9E9D7AD296ECCF2009C0223 /* Foodie */ = {
 			isa = PBXGroup;
 			children = (
+				D987014A297EA2B200D88986 /* Extensions.swift */,
 				D9E9D7AE296ECCF2009C0223 /* FoodieApp.swift */,
 				5D684A7129700A2E003EB498 /* View */,
 				5D684A6F297009F8003EB498 /* Model */,
@@ -242,6 +245,7 @@
 				5D684A8529701FAA003EB498 /* RecipesRow.swift in Sources */,
 				D9ADE22E2978053D001336AD /* IngredientCell.swift in Sources */,
 				5D684A7329700A86003EB498 /* Recipes.swift in Sources */,
+				D987014B297EA2B200D88986 /* Extensions.swift in Sources */,
 				5D684A7929700B8B003EB498 /* IngredientsModel.swift in Sources */,
 				D9E9D7AF296ECCF2009C0223 /* FoodieApp.swift in Sources */,
 			);

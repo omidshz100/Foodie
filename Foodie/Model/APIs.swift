@@ -107,7 +107,7 @@ class APIsViewModel: ObservableObject {
     /// Mark: we need to change this function to something for SwiftUI but now it's freezed for calling API
     /// params :
     ///
-    func allGredients() async {
+    func gettingAllGredients() async {
         
         do{
             var urlComponents = URLComponents(string: "https://themealdb.p.rapidapi.com")!
@@ -129,7 +129,7 @@ class APIsViewModel: ObservableObject {
                   }
     }
     ///////////
-    func allRecipes(for name:String) async{
+    func getRecipes(for name:String) async{
        
         do{
             var urlComponents = URLComponents(string: "https://themealdb.p.rapidapi.com")!
@@ -151,7 +151,7 @@ class APIsViewModel: ObservableObject {
                   }
     }
     
-    func recipeDetailsI(id:String) async {
+    func getRecipeDetailsI(id:String) async {
         
         do{
             var urlComponents = URLComponents(string: "https://themealdb.p.rapidapi.com")!
