@@ -24,7 +24,7 @@ struct BtnTogglable: View {
             //.frame(width: 150, height: 80)
             .foregroundColor(self.isSelected ? .white:.black)
             .background(self.isSelected ? .black:Color("buttonColor"))
-            .cornerRadius(20)
+            .cornerRadius(150)
     }
 }
 

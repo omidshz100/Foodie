@@ -11,7 +11,7 @@ struct IngredientCell: View {
     var data:[String] = ["a", "bjhgjh","a", "b","a", "b","a", "b","a", "b" ]
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             HStack(alignment: .top){
                 Image(systemName: "apple.logo")
                     .font(.system(size: 30))
@@ -35,7 +35,8 @@ struct IngredientCell: View {
                                 .frame(width: 200, height: 80)
                                 }
                         }
-                    }.frame(height: 200)
+                    } .frame(maxWidth: .infinity, maxHeight: .infinity)
+
                         .padding()
             
             Divider()
