@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IngredientCell: View {
-    var data:[String] = []
+    var data:[String] = ["a", "b","a", "b","a", "b","a", "b","a", "b" ]
     
     var body: some View {
         VStack{
@@ -24,7 +24,7 @@ struct IngredientCell: View {
                         LazyHGrid(rows: [GridItem(.flexible()),
                                             GridItem(.flexible()),
                                             GridItem(.flexible())]) {
-                            ForEach(1..<Int(data.count), id: \.self){ item in
+                            ForEach(0..<Int(data.count), id: \.self){ item in
                                 BtnTogglable(actionOnTap:  { isSelected, btnTitle in
                                     if isSelected {
                                         print(btnTitle)
