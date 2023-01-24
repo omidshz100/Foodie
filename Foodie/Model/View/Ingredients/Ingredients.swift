@@ -41,7 +41,12 @@ struct Ingredients: View {
                 Spacer()
             }
             .padding()
-            TextField("Search here", text: $text)
+            HStack{
+                Image(systemName: "magnifyingglass")
+                TextField("Search here", text: $text)
+
+            }
+         
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray6))
