@@ -41,7 +41,7 @@ struct Ingredients: View {
                 Spacer()
             }
             .padding()
-            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: $text)
+            TextField("Search here", text: $text)
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray6))
@@ -60,6 +60,7 @@ struct Ingredients: View {
                         }, btnTitle: (self.apis.ingredients?.meals?[item].strIngredient ?? "NoName"))
                         .frame(width: 150)
                     }
+                    .padding(5)
                 }
             }
         }.onAppear(){
