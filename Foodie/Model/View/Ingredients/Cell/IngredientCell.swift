@@ -24,14 +24,14 @@ struct IngredientCell: View {
                         LazyHGrid(rows: [GridItem(.flexible()),
                                             GridItem(.flexible()),
                                             GridItem(.flexible())]) {
-                            ForEach(1..<data.count){ item in
-                                    BtnTogglable(btnTitle: data[item]) { isSelected, btnTitle in
-                                        if isSelected {
-                                            print(btnTitle)
-                                            
-                                            IngredientSelected.selectedIngredient.append(btnTitle)
-                                        }
+                            ForEach(1..<Int(data.count), id: \.self){ item in
+                                BtnTogglable(actionOnTap:  { isSelected, btnTitle in
+                                    if isSelected {
+                                        print(btnTitle)
+                                        
+                                        IngredientSelected.selectedIngredient.append(btnTitle)
                                     }
+                                }, btnTitle: data[item])
                                 }
                         }
                     }.frame(height: 200)
