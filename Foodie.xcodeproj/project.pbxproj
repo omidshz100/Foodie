@@ -18,6 +18,8 @@
 		8B87EF6C297816EA00B39BEF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6B297816EA00B39BEF /* Post.swift */; };
 		8B87EF6E2978171400B39BEF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6D2978171400B39BEF /* PostCell.swift */; };
 		8B87EF7029787FAE00B39BEF /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6F29787FAE00B39BEF /* NewPost.swift */; };
+		8BAC2D57298270C400615A2F /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC2D56298270C400615A2F /* SettingRow.swift */; };
+		8BAC2D59298274E800615A2F /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC2D58298274E800615A2F /* ProfileRow.swift */; };
 		D987014B297EA2B200D88986 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987014A297EA2B200D88986 /* Extensions.swift */; };
 		D9ADE22C2978052F001336AD /* BtnTogglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22B2978052F001336AD /* BtnTogglable.swift */; };
 		D9ADE22E2978053D001336AD /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22D2978053D001336AD /* IngredientCell.swift */; };
@@ -40,6 +42,8 @@
 		8B87EF6B297816EA00B39BEF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8B87EF6D2978171400B39BEF /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8B87EF6F29787FAE00B39BEF /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
+		8BAC2D56298270C400615A2F /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
+		8BAC2D58298274E800615A2F /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		D987014A297EA2B200D88986 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D9ADE22B2978052F001336AD /* BtnTogglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnTogglable.swift; sourceTree = "<group>"; };
 		D9ADE22D2978053D001336AD /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
@@ -79,7 +83,7 @@
 				8B87EF682978165200B39BEF /* Ingredients */,
 				8B87EF692978167400B39BEF /* Recipes */,
 				8B87EF6A297816B500B39BEF /* Community */,
-				5D684A82297010D2003EB498 /* Profile.swift */,
+				8BAC2D552982708500615A2F /* Profile */,
 			);
 			name = View;
 			path = Model/View;
@@ -122,6 +126,16 @@
 				D9ADE22B2978052F001336AD /* BtnTogglable.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8BAC2D552982708500615A2F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5D684A82297010D2003EB498 /* Profile.swift */,
+				8BAC2D56298270C400615A2F /* SettingRow.swift */,
+				8BAC2D58298274E800615A2F /* ProfileRow.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		D9E9D7A2296ECCF2009C0223 = {
@@ -238,6 +252,7 @@
 				D9E9D7B1296ECCF2009C0223 /* ContentView.swift in Sources */,
 				8B87EF6C297816EA00B39BEF /* Post.swift in Sources */,
 				5D684A7B29700B94003EB498 /* RecipesModel.swift in Sources */,
+				8BAC2D59298274E800615A2F /* ProfileRow.swift in Sources */,
 				5D684A81297010BD003EB498 /* Community.swift in Sources */,
 				8B87EF7029787FAE00B39BEF /* NewPost.swift in Sources */,
 				8B87EF6E2978171400B39BEF /* PostCell.swift in Sources */,
@@ -248,6 +263,7 @@
 				D987014B297EA2B200D88986 /* Extensions.swift in Sources */,
 				5D684A7929700B8B003EB498 /* IngredientsModel.swift in Sources */,
 				D9E9D7AF296ECCF2009C0223 /* FoodieApp.swift in Sources */,
+				8BAC2D57298270C400615A2F /* SettingRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
