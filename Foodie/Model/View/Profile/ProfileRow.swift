@@ -12,8 +12,9 @@ struct ProfileRow: View {
         HStack(spacing: 30){
             Image("NewPostProfile")
                 .resizable()
-                .frame(width: 100, height: 120)
+                .frame(width: 110, height: 120)
                 .cornerRadius(20)
+                .shadow(radius: 0.5)
             VStack{
                 Text("MrBroccoli")
                     .bold().font(.system(size: 20))

@@ -20,6 +20,9 @@
 		8B87EF7029787FAE00B39BEF /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6F29787FAE00B39BEF /* NewPost.swift */; };
 		8BAC2D57298270C400615A2F /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC2D56298270C400615A2F /* SettingRow.swift */; };
 		8BAC2D59298274E800615A2F /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC2D58298274E800615A2F /* ProfileRow.swift */; };
+		8BAC2D5B298278CC00615A2F /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC2D5A298278CC00615A2F /* EditProfile.swift */; };
+		8BAC2D5D298278E700615A2F /* EditProfilePropic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC2D5C298278E700615A2F /* EditProfilePropic.swift */; };
+		8BAC2D5F29827C3800615A2F /* EditProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC2D5E29827C3800615A2F /* EditProfileList.swift */; };
 		D987014B297EA2B200D88986 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987014A297EA2B200D88986 /* Extensions.swift */; };
 		D9ADE22C2978052F001336AD /* BtnTogglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22B2978052F001336AD /* BtnTogglable.swift */; };
 		D9ADE22E2978053D001336AD /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22D2978053D001336AD /* IngredientCell.swift */; };
@@ -44,6 +47,9 @@
 		8B87EF6F29787FAE00B39BEF /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		8BAC2D56298270C400615A2F /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
 		8BAC2D58298274E800615A2F /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
+		8BAC2D5A298278CC00615A2F /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		8BAC2D5C298278E700615A2F /* EditProfilePropic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePropic.swift; sourceTree = "<group>"; };
+		8BAC2D5E29827C3800615A2F /* EditProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileList.swift; sourceTree = "<group>"; };
 		D987014A297EA2B200D88986 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D9ADE22B2978052F001336AD /* BtnTogglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnTogglable.swift; sourceTree = "<group>"; };
 		D9ADE22D2978053D001336AD /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 				5D684A82297010D2003EB498 /* Profile.swift */,
 				8BAC2D56298270C400615A2F /* SettingRow.swift */,
 				8BAC2D58298274E800615A2F /* ProfileRow.swift */,
+				8BAC2D5A298278CC00615A2F /* EditProfile.swift */,
+				8BAC2D5C298278E700615A2F /* EditProfilePropic.swift */,
+				8BAC2D5E29827C3800615A2F /* EditProfileList.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -248,14 +257,17 @@
 				D9ADE22C2978052F001336AD /* BtnTogglable.swift in Sources */,
 				5D684A7529700A9B003EB498 /* Ingredients.swift in Sources */,
 				D9BE56BC297E7A590070CCAD /* APIs.swift in Sources */,
+				8BAC2D5B298278CC00615A2F /* EditProfile.swift in Sources */,
 				5D684A83297010D2003EB498 /* Profile.swift in Sources */,
 				D9E9D7B1296ECCF2009C0223 /* ContentView.swift in Sources */,
 				8B87EF6C297816EA00B39BEF /* Post.swift in Sources */,
 				5D684A7B29700B94003EB498 /* RecipesModel.swift in Sources */,
 				8BAC2D59298274E800615A2F /* ProfileRow.swift in Sources */,
 				5D684A81297010BD003EB498 /* Community.swift in Sources */,
+				8BAC2D5D298278E700615A2F /* EditProfilePropic.swift in Sources */,
 				8B87EF7029787FAE00B39BEF /* NewPost.swift in Sources */,
 				8B87EF6E2978171400B39BEF /* PostCell.swift in Sources */,
+				8BAC2D5F29827C3800615A2F /* EditProfileList.swift in Sources */,
 				5D684A7729700AB5003EB498 /* RecipeDetail.swift in Sources */,
 				5D684A8529701FAA003EB498 /* RecipesRow.swift in Sources */,
 				D9ADE22E2978053D001336AD /* IngredientCell.swift in Sources */,
