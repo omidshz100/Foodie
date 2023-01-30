@@ -13,8 +13,8 @@
 		5D684A7929700B8B003EB498 /* IngredientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A7829700B8B003EB498 /* IngredientsModel.swift */; };
 		5D684A7B29700B94003EB498 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A7A29700B94003EB498 /* RecipesModel.swift */; };
 		5D684A81297010BD003EB498 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A80297010BD003EB498 /* Community.swift */; };
-		5D684A83297010D2003EB498 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A82297010D2003EB498 /* Profile.swift */; };
 		5D684A8529701FAA003EB498 /* RecipesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D684A8429701FAA003EB498 /* RecipesRow.swift */; };
+		8B48703A2987B6F500E146D4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4870392987B6F500E146D4 /* Profile.swift */; };
 		8B87EF6C297816EA00B39BEF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6B297816EA00B39BEF /* Post.swift */; };
 		8B87EF6E2978171400B39BEF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6D2978171400B39BEF /* PostCell.swift */; };
 		8B87EF7029787FAE00B39BEF /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87EF6F29787FAE00B39BEF /* NewPost.swift */; };
@@ -40,8 +40,8 @@
 		5D684A7829700B8B003EB498 /* IngredientsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsModel.swift; sourceTree = "<group>"; };
 		5D684A7A29700B94003EB498 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		5D684A80297010BD003EB498 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
-		5D684A82297010D2003EB498 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5D684A8429701FAA003EB498 /* RecipesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRow.swift; sourceTree = "<group>"; };
+		8B4870392987B6F500E146D4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		8B87EF6B297816EA00B39BEF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8B87EF6D2978171400B39BEF /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8B87EF6F29787FAE00B39BEF /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
@@ -137,12 +137,12 @@
 		8BAC2D552982708500615A2F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				5D684A82297010D2003EB498 /* Profile.swift */,
 				8BAC2D56298270C400615A2F /* SettingRow.swift */,
 				8BAC2D58298274E800615A2F /* ProfileRow.swift */,
 				8BAC2D5A298278CC00615A2F /* EditProfile.swift */,
 				8BAC2D5C298278E700615A2F /* EditProfilePropic.swift */,
 				8BAC2D5E29827C3800615A2F /* EditProfileList.swift */,
+				8B4870392987B6F500E146D4 /* Profile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -258,7 +258,6 @@
 				5D684A7529700A9B003EB498 /* Ingredients.swift in Sources */,
 				D9BE56BC297E7A590070CCAD /* APIs.swift in Sources */,
 				8BAC2D5B298278CC00615A2F /* EditProfile.swift in Sources */,
-				5D684A83297010D2003EB498 /* Profile.swift in Sources */,
 				D9E9D7B1296ECCF2009C0223 /* ContentView.swift in Sources */,
 				8B87EF6C297816EA00B39BEF /* Post.swift in Sources */,
 				5D684A7B29700B94003EB498 /* RecipesModel.swift in Sources */,
@@ -274,6 +273,7 @@
 				5D684A7329700A86003EB498 /* Recipes.swift in Sources */,
 				D987014B297EA2B200D88986 /* Extensions.swift in Sources */,
 				5D684A7929700B8B003EB498 /* IngredientsModel.swift in Sources */,
+				8B48703A2987B6F500E146D4 /* Profile.swift in Sources */,
 				D9E9D7AF296ECCF2009C0223 /* FoodieApp.swift in Sources */,
 				8BAC2D57298270C400615A2F /* SettingRow.swift in Sources */,
 			);

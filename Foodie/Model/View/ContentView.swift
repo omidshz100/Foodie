@@ -19,7 +19,7 @@ struct ContentView: View {
                 .tabItem{
                     Label("Community", systemImage: "person.2")
                 }
-            Profile()
+           Profile()
                 .tabItem{
                     Label("Profile", systemImage: "person.circle")
                 }
