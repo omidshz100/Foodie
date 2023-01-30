@@ -9,7 +9,6 @@ import SwiftUI
 
 struct EditProfilePropic: View {
     var body: some View {
-        
         VStack{
             Image("NewPostProfile")
                 .resizable()
@@ -18,7 +17,7 @@ struct EditProfilePropic: View {
                 .shadow(radius: 0.5)
                 .padding()
             Button("Edit your profile picture") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                // some action here
             }
             .bold()
 

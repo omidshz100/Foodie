@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileRow: View {
     var body: some View {
-        NavigationStack {
+        
             HStack(spacing: 30){
                 Image("NewPostProfile")
                     .resizable()
@@ -33,10 +33,8 @@ struct ProfileRow: View {
                             .foregroundColor(.black)
                      }
                 })
-                
                 Spacer()
             }
-        }
     }
     
     struct ProfileRow_Previews: PreviewProvider {

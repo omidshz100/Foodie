@@ -10,10 +10,12 @@ import CoreData
 
 struct Profile: View {
     var body: some View {
-        VStack(spacing:20){
-            ProfileRow()
-            SettingRow()
-        } .padding()
+       NavigationStack {
+            VStack(spacing:20){
+                ProfileRow()
+                SettingRow()
+            } .padding()
+        }
     }
 }
 

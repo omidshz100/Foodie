@@ -10,11 +10,6 @@ import SwiftUI
 
 
 struct SettingRow: View {
-    
-    
-    
-    
-    
     var body: some View {
         VStack{
             Divider()
