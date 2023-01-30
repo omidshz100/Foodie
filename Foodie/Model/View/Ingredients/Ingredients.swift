@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct Ingredients: View {
     @ObservedObject
     var apis = APIsViewModel()
     
     @State var text:String = ""
+    
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(entity: ProfileDB.entity(),sortDescriptors: [NSSortDescriptor(keyPath: \ProfileDB.id, ascending: true)], animation: .default)
+    private var items: FetchedResults<ProfileDB>
     
     var body: some View {
         VStack{

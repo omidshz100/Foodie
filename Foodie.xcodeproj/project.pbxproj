@@ -27,6 +27,8 @@
 		D9ADE22C2978052F001336AD /* BtnTogglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22B2978052F001336AD /* BtnTogglable.swift */; };
 		D9ADE22E2978053D001336AD /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADE22D2978053D001336AD /* IngredientCell.swift */; };
 		D9BE56BC297E7A590070CCAD /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE56BB297E7A590070CCAD /* APIs.swift */; };
+		D9DD23302987C10600CAE351 /* FoodieDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9DD232E2987C10600CAE351 /* FoodieDB.xcdatamodeld */; };
+		D9DD23322987C26A00CAE351 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD23312987C26A00CAE351 /* Persistence.swift */; };
 		D9E9D7AF296ECCF2009C0223 /* FoodieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9D7AE296ECCF2009C0223 /* FoodieApp.swift */; };
 		D9E9D7B1296ECCF2009C0223 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9D7B0296ECCF2009C0223 /* ContentView.swift */; };
 		D9E9D7B3296ECCF3009C0223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E9D7B2296ECCF3009C0223 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		D9ADE22B2978052F001336AD /* BtnTogglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnTogglable.swift; sourceTree = "<group>"; };
 		D9ADE22D2978053D001336AD /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		D9BE56BB297E7A590070CCAD /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		D9DD232F2987C10600CAE351 /* FoodieDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodieDB.xcdatamodel; sourceTree = "<group>"; };
+		D9DD23312987C26A00CAE351 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D9E9D7AB296ECCF2009C0223 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E9D7AE296ECCF2009C0223 /* FoodieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieApp.swift; sourceTree = "<group>"; };
 		D9E9D7B0296ECCF2009C0223 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				5D684A7829700B8B003EB498 /* IngredientsModel.swift */,
 				5D684A7A29700B94003EB498 /* RecipesModel.swift */,
 				D9BE56BB297E7A590070CCAD /* APIs.swift */,
+				D9DD232E2987C10600CAE351 /* FoodieDB.xcdatamodeld */,
+				D9DD23312987C26A00CAE351 /* Persistence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,11 +269,13 @@
 				5D684A7B29700B94003EB498 /* RecipesModel.swift in Sources */,
 				8BAC2D59298274E800615A2F /* ProfileRow.swift in Sources */,
 				5D684A81297010BD003EB498 /* Community.swift in Sources */,
+				D9DD23322987C26A00CAE351 /* Persistence.swift in Sources */,
 				8BAC2D5D298278E700615A2F /* EditProfilePropic.swift in Sources */,
 				8B87EF7029787FAE00B39BEF /* NewPost.swift in Sources */,
 				8B87EF6E2978171400B39BEF /* PostCell.swift in Sources */,
 				8BAC2D5F29827C3800615A2F /* EditProfileList.swift in Sources */,
 				5D684A7729700AB5003EB498 /* RecipeDetail.swift in Sources */,
+				D9DD23302987C10600CAE351 /* FoodieDB.xcdatamodeld in Sources */,
 				5D684A8529701FAA003EB498 /* RecipesRow.swift in Sources */,
 				D9ADE22E2978053D001336AD /* IngredientCell.swift in Sources */,
 				5D684A7329700A86003EB498 /* Recipes.swift in Sources */,
@@ -476,6 +484,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9DD232E2987C10600CAE351 /* FoodieDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9DD232F2987C10600CAE351 /* FoodieDB.xcdatamodel */,
+			);
+			currentVersion = D9DD232F2987C10600CAE351 /* FoodieDB.xcdatamodel */;
+			path = FoodieDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D9E9D7A3296ECCF2009C0223 /* Project object */;
 }

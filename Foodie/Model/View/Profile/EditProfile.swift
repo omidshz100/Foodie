@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct EditProfile: View {
     @State var name: String = ""
@@ -13,6 +14,10 @@ struct EditProfile: View {
     @State var email: String = ""
     @State var phone: String = ""
     
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(entity: ProfileDB.entity(),sortDescriptors: [NSSortDescriptor(keyPath: \ProfileDB.id, ascending: true)], animation: .default)
+    private var items: FetchedResults<ProfileDB>
     
     var body: some View {
         VStack{
@@ -56,7 +61,7 @@ struct EditProfile: View {
             
             
             Button("Done") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                savaTask()
             }
             .buttonStyle(.borderedProminent)
             Spacer()
@@ -64,6 +69,22 @@ struct EditProfile: View {
 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+    
+    private func savaTask(){
+        do{
+            let newItem = ProfileDB(context: viewContext)
+            newItem.name = name
+            newItem.id = UUID()
+            newItem.username = username
+            newItem.email = email
+            newItem.phone = phone
+            newItem.userIMG = "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            try viewContext.save()
+        }
+        catch{
+            print(error.localizedDescription)
+        }
     }
 }
 

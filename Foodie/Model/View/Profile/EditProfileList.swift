@@ -13,10 +13,6 @@ struct EditProfileList: View {
     @State var email: String = ""
     @State var phone: String = ""
 
-
-
-        
-    
     var body: some View {
         VStack{
             HStack{

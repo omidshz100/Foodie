@@ -16,7 +16,7 @@ struct Recipes: View, Hashable {
     var body: some View {
         NavigationStack(){
             ScrollView(){
-                ForEach(0..<images.count) { image in
+                ForEach(0..<images.count, id: \.self) { image in
                     NavigationLink {
                         RecipeDetail()
                     } label: {
