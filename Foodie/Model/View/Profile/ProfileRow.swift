@@ -17,10 +17,10 @@ struct ProfileRow: View {
                 .shadow(radius: 0.5)
             VStack{
                 Text("MrBroccoli")
-                    .bold().font(.system(size: 20))
+                    .bold().font(.system(size: 18))
                     .padding()
                 Text("broccoli23")
-                    .font(.system(size: 18))
+                    .font(.system(size: 16))
                         .fontWeight(.regular)
             }
             Button(action: {}) {

@@ -137,12 +137,12 @@
 		8BAC2D552982708500615A2F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				8B4870392987B6F500E146D4 /* Profile.swift */,
 				8BAC2D56298270C400615A2F /* SettingRow.swift */,
 				8BAC2D58298274E800615A2F /* ProfileRow.swift */,
 				8BAC2D5A298278CC00615A2F /* EditProfile.swift */,
 				8BAC2D5C298278E700615A2F /* EditProfilePropic.swift */,
 				8BAC2D5E29827C3800615A2F /* EditProfileList.swift */,
-				8B4870392987B6F500E146D4 /* Profile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
