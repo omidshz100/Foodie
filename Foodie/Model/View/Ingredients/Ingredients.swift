@@ -11,7 +11,7 @@ import CoreData
 struct Ingredients: View {
     @ObservedObject
     var apis = APIsViewModel()
-    
+    @State private var goesToRecipe: Bool = false
     @State var text:String = ""
     
     @Environment(\.managedObjectContext) private var viewContext
@@ -20,39 +20,26 @@ struct Ingredients: View {
     private var items: FetchedResults<ProfileDB>
     
     var body: some View {
-        VStack{
-//            Text("Select your ingredients!")
-//                .font(.system(size: 32, weight: .semibold))
-//            ScrollView{
-//                if var ingredientsList = self.apis.ingredients {
-//                    let arrDivider = arrayDivider(totalNumber: ingredientsList.meals!.count)
-//                    var data = divideTo(array: ingredientsList.meals!, itemNumbers: arrDivider)
-//
-//                    ForEach(0..<data.count) { item in
-//                        ForEach(0..<data[item].count){ items in
-//                            IngredientCell(data: data[item].map({ itemModel in
-//                                return itemModel.strIngredient ?? "No Name"
-//                            }))
-//                        }
-//                    }
-//                }
-//            }
-//            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-//                print(IngredientSelected.selectedIngredient)
-//            }
-            
-            HStack{
-                Text("Search Ingredient")
-                    .bold().font(.title)
-                Spacer()
-            }
-            .padding()
-            HStack{
-                Image(systemName: "magnifyingglass")
-                TextField("Search here", text: $text)
-
-            }
-         
+        NavigationStack {
+            VStack{
+                HStack{
+                    Text("Search Ingredient")
+                        .bold().font(.title)
+                    Spacer()
+                    Button(action: {
+                        print("Floating Button Click")
+                    }, label: {
+                        NavigationLink(destination: Recipes()) {
+                             Text("Go!")
+                         }
+                    })
+                }
+                .padding()
+                HStack{
+                    Image(systemName: "magnifyingglass")
+                    TextField("Search here", text: $text)
+                    
+                }
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray6))
@@ -61,23 +48,24 @@ struct Ingredients: View {
                 .onTapGesture {
                     print("somethoing")
                 }
-            Spacer(minLength: 15)
-            ScrollView(.vertical){
-                LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())], spacing: 5) {
-                    ForEach(0..<(self.apis.ingredients?.meals?.count ?? 1), id: \.self){
-                        item in
-                        BtnTogglable(actionOnTap:  { isSelected, btnTitle in
-                            print(btnTitle)
-                        }, btnTitle: (self.apis.ingredients?.meals?[item].strIngredient ?? "NoName"))
-                        .frame(width: 150)
+                Spacer(minLength: 15)
+                ScrollView(.vertical){
+                    LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())], spacing: 5) {
+                        ForEach(0..<(self.apis.ingredients?.meals?.count ?? 1), id: \.self){
+                            item in
+                            BtnTogglable(actionOnTap:  { isSelected, btnTitle in
+                                print(btnTitle)
+                            }, btnTitle: (self.apis.ingredients?.meals?[item].strIngredient ?? "NoName"))
+                            .frame(width: 150)
+                        }
+                        .padding(5)
                     }
-                    .padding(5)
                 }
-            }
-        }.onAppear(){
-            Task{
-                await self.apis.gettingAllGredients()
-            }
+            }.onAppear(){
+                Task{
+                    await self.apis.gettingAllGredients()
+                }
+            }//
         }
     }
 }
