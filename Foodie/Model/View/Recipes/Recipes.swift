@@ -9,20 +9,24 @@ import SwiftUI
 
 
 struct Recipes: View, Hashable {
-    var images = ["pic1", "pic2", "pic3", "pic4"]
-    var recipes = ["Tortillas", "Churros", "Savory Pie Crust", "Vegan Pasta"]
-
-    
+//    var images = ["pic1", "pic2", "pic3", "pic4"]
+//    var recipes = ["Tortillas", "Churros", "Savory Pie Crust", "Vegan Pasta"]
+//
+//
     var body: some View {
         NavigationStack(){
             ScrollView(){
-                ForEach(0..<images.count, id: \.self) { image in
-                    NavigationLink {
-                        RecipeDetail()
-                    } label: {
-                        RecipesRow(imageName: images[image], recipeName: recipes[image])
+                ForEach(0..<RecipeInfo.shared.getRecipes().count, id: \.self) { index in
+                    VStack{
+                        NavigationLink {
+                            RecipeDetail(recipe: RecipeInfo.shared.getRecipes()[index])
+                        } label: {
+                            RecipesRow(imageName: RecipeInfo.shared.getRecipes()[index].imageName, recipeName: RecipeInfo.shared.getRecipes()[index].title)
+                        }
+                        
+                        
+                        
                     }
-
                 }
             }
             .scrollIndicators(.hidden)
