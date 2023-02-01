@@ -9,10 +9,7 @@ import SwiftUI
 
 
 struct Recipes: View, Hashable {
-//    var images = ["pic1", "pic2", "pic3", "pic4"]
-//    var recipes = ["Tortillas", "Churros", "Savory Pie Crust", "Vegan Pasta"]
-//
-//
+
     var body: some View {
         NavigationStack(){
             ScrollView(){
