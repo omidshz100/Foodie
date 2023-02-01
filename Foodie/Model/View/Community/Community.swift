@@ -45,10 +45,7 @@ struct Community: View {
                 }
         }
        
-        /*             .sheet(isPresented: $showAddNewPost){
-        NewPost()
-     }
-*/
+    
     }
 }
     struct Community_Previews: PreviewProvider {

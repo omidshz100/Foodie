@@ -30,7 +30,7 @@ struct Ingredients: View {
                         print("Floating Button Click")
                     }, label: {
                         NavigationLink(destination: Recipes()) {
-                             Text("Go!")
+                            Text("Go!") .bold()
                          }
                     })
                 }
@@ -65,7 +65,7 @@ struct Ingredients: View {
                 Task{
                     await self.apis.gettingAllGredients()
                 }
-            }//
+            }
         }
     }
 }

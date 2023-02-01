@@ -23,7 +23,7 @@ struct PostCell: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Text(post.userName)
                             .font(.system(size: 16, weight: .regular))
-                           // .foregroundColor(Color("LightGrayColor"))
+                          
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
                    Spacer()
@@ -49,24 +49,11 @@ struct PostCell: View {
                 }.frame(maxWidth: .infinity, alignment: .leading)
                 Divider()
                 VStack (spacing: 10.0) {
-                    HStack {
-                      //  Text(post.userName)
-                       //     .font(.system(size: 14))
-                        Spacer()
-                     //   CustomButton()
-                       // Text(String("\(post.likes) Likes"))
-                           // .font(.system(size: 14))
-                          // .foregroundColor(Color("DarkGrayColor"))
-                    }.frame(maxWidth: .infinity, alignment: .leading)
+                 
                     Text(post.description)
                         .font(.system(size: 16))
-                       // .foregroundColor(Color("LightGrayColor"))
-                    HStack {
-                       // Image("ic_downLight")
-                          //  Text(String("See \(post.comments) comments"))
-                          //  .font(.system(size: 12))
-                                //.foregroundColor(Color("LightGrayColor"))
-                    }.frame(maxWidth: .infinity, alignment: .leading)
+                       
+                   
                 }.frame(maxWidth: .infinity, alignment: .leading)
     }
         

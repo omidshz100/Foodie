@@ -35,7 +35,7 @@ struct RecipesRow: View {
             }
         
         .foregroundColor(.black)
-        //.frame(width: 100, height: 100)
+       
         
     }
 }

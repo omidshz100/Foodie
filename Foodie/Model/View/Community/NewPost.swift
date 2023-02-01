@@ -20,7 +20,7 @@ struct NewPost: View {
                     Rectangle()
                         .frame(width: 350, height:325)
                         .cornerRadius(20)
-                        .foregroundColor(Color("color1"))
+                        .foregroundColor(Color("buttonColor"))
                     Image(systemName: "plus")
                         .resizable()
                         .frame(width: 100, height: 100)
@@ -32,7 +32,7 @@ struct NewPost: View {
                 .padding()
                 .font(.system(size:20, weight:.medium))
                 .frame(width: 350, height: 82)
-                .background(Color("color1"))
+                .background(Color("buttonColor"))
                 .cornerRadius(14)
             
             Button {
