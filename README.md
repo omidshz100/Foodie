@@ -30,6 +30,7 @@ Project is created with:
 * XCode Version 14.2 (14C18)
 * Swift Version 5.7.3
 * [Recipes and Ingredients API](https://www.themealdb.com/api.php)
+* [Tutorial on http requests](https://medium.com/@giadapisani75/http-requests-in-swift-9f8883c84d9b)
 	
 ## Setup
 To run this project, simply clone the repository and open it on XCode
