@@ -23,14 +23,14 @@ struct Ingredients: View {
         NavigationStack {
             VStack{
                 HStack{
-                    Text("Search Ingredient")
+                    Text("Ingredients")
                         .bold().font(.title)
                     Spacer()
                     Button(action: {
                         print("Floating Button Click")
                     }, label: {
                         NavigationLink(destination: Recipes()) {
-                            Text("Go!") .bold()
+                            Text("Get Recipes") .bold()
                          }
                     })
                 }
@@ -61,6 +61,8 @@ struct Ingredients: View {
                         .padding(5)
                     }
                 }
+                .scrollIndicators(.hidden)
+
             }.onAppear(){
                 Task{
                     await self.apis.gettingAllGredients()
